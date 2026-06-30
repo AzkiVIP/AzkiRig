@@ -51,10 +51,6 @@ For unused arm types:
 
 or hide/uncheck the corresponding collection.
 
-### Optional
-
-Preview collections can also be hidden if you want a cleaner Outliner.
-
 ## License
 
 See the LICENSE file for details.
