@@ -14,8 +14,8 @@ Created by AzkiVIP.
 
 ## Preview
 
-![Preview](preview1.png)
-(preview2.png)
+![Preview1](preview1.png)
+![Preview2](preview2.png)
 
 ## Installation
 
@@ -29,7 +29,4 @@ See the LICENSE file for details.
 
 ## Credits
 
-Created by AzkiVIP Studio.
-
-Crafted to Stand Out.
-
+Created by AzkiVIP.
