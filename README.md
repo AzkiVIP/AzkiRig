@@ -2,7 +2,7 @@
 
 A simple and creator-friendly Minecraft Blender rig.
 
-Created by AzkiVIP Studio.
+Created by AzkiVIP.
 
 ## Features
 
@@ -15,6 +15,7 @@ Created by AzkiVIP Studio.
 ## Preview
 
 ![Preview](preview1.png)
+(preview2.png)
 
 ## Installation
 
