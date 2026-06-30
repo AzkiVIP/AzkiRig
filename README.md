@@ -54,8 +54,8 @@ or hide/uncheck the corresponding collection.
 
 ## License
 
-See the LICENSE file for details.
+See the [License](LICENSE) file for details.
 
 ## Credits
 
-Created by AzkiVIP.
+Created by AzkiVIP <img src="https://i.imgur.com/XXXXX.png" width="96">.
