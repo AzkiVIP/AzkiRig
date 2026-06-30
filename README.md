@@ -2,7 +2,7 @@
 
 A simple and creator-friendly Minecraft Blender rig.
 
-Created by AzkiVIP.
+Created by AzkiVIP <img src="https://i.imgur.com/3Ln2tg4.png" width="96">.
 
 ## Features
 
@@ -58,4 +58,4 @@ See the [License](LICENSE) file for details.
 
 ## Credits
 
-Created by AzkiVIP <img src="https://i.imgur.com/XXXXX.png" width="96">.
+Created by AzkiVIP <img src="https://i.imgur.com/3Ln2tg4.png" width="96">.
