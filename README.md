@@ -16,6 +16,7 @@ Created by AzkiVIP.
 
 ![Preview1](preview1.png)
 ![Preview2](preview2.png)
+![Preview3](preview3.png)
 
 ## Installation
 
