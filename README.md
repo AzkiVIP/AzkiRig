@@ -19,6 +19,7 @@ Created by AzkiVIP <img src="https://i.imgur.com/NBQvF2T.png" width="16">.
 ![Preview2](preview2.png)
 ---
 ![Preview3](preview3.png)
+---
 
 ## Version
 
