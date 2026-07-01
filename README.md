@@ -21,7 +21,12 @@ Created by AzkiVIP <img src="https://i.imgur.com/NBQvF2T.png" width="16">.
 ![Preview3](preview3.png)
 
 ## Version
-[Version](https://github.com/AzkiVIP/AzkiRig/releases)
+
+| Status | Version |
+|---------|---------|
+| Latest Release | [v1.0.0](https://github.com/AzkiVIP/AzkiRig/releases/tag/v1.0.0) |
+
+[View All Releases](https://github.com/AzkiVIP/AzkiRig/releases)
 
 ## Installation
 
