@@ -1,12 +1,18 @@
 # Changelog
 
-## [v1.0.0](https://github.com/AzkiVIP/AzkiRig/releases/tag/v1.0.0)
+All notable changes to this project will be documented in this file.
 
-Initial public release.
+## [v1.0.0](https://github.com/AzkiVIP/AzkiRig/releases/tag/v1.0.0) - 2026-06-30
 
-### Features
+### Added
 
+* Initial public release
 * Minecraft Blender rig
 * Easy posing workflow
-* Lightweight design
-* Crown signature
+* Lightweight setup
+* Multiple arm types
+
+### Notes
+
+* Created by AzkiVIP <img src="https://i.imgur.com/NBQvF2T.png" width="16">
+* Compatible with Blender 5.0+
