@@ -26,6 +26,7 @@ Created by AzkiVIP <img src="https://i.imgur.com/vMTgvCV.png" width="16">.
 | Status | Version |
 |---------|---------|
 | Latest Release | [v1.0.0](https://github.com/AzkiVIP/AzkiRig/releases/tag/v1.0.0) |
+| Latest Release | [v1.0.0](https://github.com/AzkiVIP/AzkiRig/releases/tag/v1.1.0) |
 
 [View All Releases](https://github.com/AzkiVIP/AzkiRig/releases)
 
