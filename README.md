@@ -115,5 +115,3 @@ See the [LICENSE](LICENSE) file for details.
 ## Credits
 
 Created by AzkiVIP <img src="https://i.imgur.com/vMTgvCV.png" width="16">.
-
-Crafted to Stand Out.
