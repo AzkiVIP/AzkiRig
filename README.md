@@ -89,7 +89,13 @@ The `armor.blend` file contains the separate armor assets.
 4. Open the **Collection** directory.
 5. Select the **AzkiRig Lite** or **AzkiRig Face** collection and append it.
 
-### 4. Choose an Arm Type
+### 4. Hide the Widgets
+
+1. Go to outliner
+2. Find **WGTS_Armature**
+3. Uncheck the collection
+
+### 5. Choose an Arm Type
 
 AzkiRig includes multiple arm styles.
 
@@ -99,7 +105,7 @@ Enable the arm type you want to use. For unused arm types:
 - Disable render visibility.
 - Or hide the corresponding collection.
 
-### 5. Enable the Armor, Cape, Elytra
+### 6. Enable the Armor, Cape, Elytra
 
 1. Go to Outliner
 2. Find Collection named **armor**, **cape**, **elytra**
