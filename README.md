@@ -105,11 +105,11 @@ Enable the arm type you want to use. For unused arm types:
 - Disable render visibility.
 - Or hide the corresponding collection.
 
-### 6. Enable the Armor, Cape, Elytra
+### 6. Enable and Disable the Armor, Cape, Elytra
 
 1. Go to Outliner
 2. Find Collection named **armor**, **cape**, **elytra**
-3. Check the box
+3. Uncheck or Check the box
 
 ---
 
