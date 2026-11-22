@@ -47,11 +47,7 @@ The equipment textures include armor materials, leggings, a cape, and an elytra.
 
 ### Render Showcase
 
-![AzkiRig Preview 1](preview1.png)
-
-![AzkiRig Preview 2](preview2.png)
-
-![AzkiRig Preview 3](preview3.png)
+![AzkiRig Preview](thumbnail.png)
 
 ---
 
