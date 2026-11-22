@@ -1,42 +1,45 @@
 # AzkiRig
 
-A simple and creator-friendly Minecraft Blender rig.
+A simple, creator-friendly Minecraft character rig for Blender, designed for posing and rendering.
 
 Created by AzkiVIP <img src="https://i.imgur.com/vMTgvCV.png" width="16">.
 
-[⬇ Download Latest Release](https://github.com/AzkiVIP/AzkiRig/releases/latest)
-
----
-
-## Table of Contents
-
-* [Features](#features)
-* [Available Versions](#available-versions)
-* [Preview](#preview)
-* [Version](#version)
-* [Compatibility](#compatibility)
-* [Installation](#installation)
-* [License](#license)
-* [Credits](#credits)
+[⬇ Download Latest Stable Release](https://github.com/AzkiVIP/AzkiRig/releases/latest)
 
 ---
 
 ## Features
 
-* Simple workflow
-* Easy posing
-* Lightweight setup
-* Minecraft-focused design
-* Crown signature branding
+- Simple posing workflow
+- Multiple arm types
+- Lightweight setup
+- Minecraft-focused rig design
+- Lite and Face rig variants
+- Included character, armor, and equipment textures
 
 ---
 
 ## Available Versions
 
-| Version      | Description                                                    |
-| ------------ | -------------------------------------------------------------- |
-| AzkiRig Lite | Simplified rig focused on posing and rendering.                |
-| AzkiRig Face | Includes facial controls for expressions and character acting. |
+| Version | Description | Status |
+| --- | --- | --- |
+| **AzkiRig Lite** | A simplified rig focused on posing and rendering. | Stable |
+| **AzkiRig Face** | A face rig variant with eye controls and a foundation for facial animation. | Stable |
+
+---
+
+## Package Contents
+
+| File or Folder | Description |
+| --- | --- |
+| `AzkiRig Lite.blend` | Lite rig file. |
+| `AzkiRig Face.blend` | Face rig file. |
+| `armor.blend` | Separate armor asset file. |
+| `textures/` | Character and equipment textures. |
+| `textures/equipment/leggings` | Leggings textures |
+| `textures/m*.png` | Mouths texture |
+
+The equipment textures include armor materials, leggings, a cape, and an elytra.
 
 ---
 
@@ -44,71 +47,69 @@ Created by AzkiVIP <img src="https://i.imgur.com/vMTgvCV.png" width="16">.
 
 ### Render Showcase
 
-![Preview1](preview1.png)
+![AzkiRig Preview 1](preview1.png)
 
-![Preview2](preview2.png)
+![AzkiRig Preview 2](preview2.png)
 
-![Preview3](preview3.png)
-
----
-
-## Version
-
-| Status         | Version                                                          |
-| -------------- | ---------------------------------------------------------------- |
-| Latest Release | [v1.1.0](https://github.com/AzkiVIP/AzkiRig/releases/tag/v1.1.0) |
-
-[View All Releases](https://github.com/AzkiVIP/AzkiRig/releases)
+![AzkiRig Preview 3](preview3.png)
 
 ---
 
-## Compatibility
+## Releases
 
-Tested on Blender 5.0+
+| Release | Type |
+| --- | --- |
+| [v1.0.0](https://github.com/AzkiVIP/AzkiRig/releases/tag/v1.0.0) | Latest stable release |
 
 ---
 
 ## Installation
 
-### Download
+### 1. Download and Extract
 
-1. Download the latest AzkiRig release from GitHub.
-2. Extract the ZIP file.
-3. Open `AzkiRig.blend` in Blender.
+1. Open the [AzkiRig Releases page](https://github.com/AzkiVIP/AzkiRig/releases).
+2. Choose the right version
+3. Download the release package.
+4. Extract the ZIP archive.
 
-### Using the Rig
+### 2. Open a Rig
 
-You have two options:
+Choose the variant you want to use:
 
-#### Option 1 — Use the Included Scene
+- Open `AzkiRig Lite.blend` for the Lite rig.
+- Open `AzkiRig Face.blend` to Face Rig.
 
-Simply start posing and rendering inside the provided blend file.
+The `armor.blend` file contains the separate armor assets.
 
-#### Option 2 — Append into Your Project
+### 3. Append a Rig into Your Project
 
 1. Open your Blender project.
-2. Go to **File → Append**.
-3. Open `AzkiRig.blend`.
-4. Append the collection named **AzkiRig**.
+2. Select **File → Append**.
+3. Browse to the rig `.blend` file you want to use.
+4. Open the **Collection** directory.
+5. Select the **AzkiRig Lite** or **AzkiRig Face** collection and append it.
 
-### Arm Type Selection
+### 4. Choose an Arm Type
 
 AzkiRig includes multiple arm styles.
 
-Enable the arm type you want to use.
+Enable the arm type you want to use. For unused arm types:
 
-For unused arm types:
+- Disable viewport visibility.
+- Disable render visibility.
+- Or hide the corresponding collection.
 
-* Disable viewport visibility
-* Disable render visibility
+### 5. Enable the Armor, Cape, Elytra
 
-Or hide/uncheck the corresponding collection.
+1. Go to Outliner
+2. Find Collection named **armor**, **cape**, **elytra**
+3. Check the box
 
 ---
 
 ## License
 
-See the [LICENSE](LICENSE) file for details.
+See the [LICENSE](LICENSE) file for license details.
 
 ---
 
