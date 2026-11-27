@@ -8,7 +8,6 @@ from bpy.types import Operator
 
 from .config import TARGETS
 from .utils import (
-    capture_initial_visibility,
     materials_for_texture_slot,
     replace_material_images,
     restore_all_visibility,
