@@ -22,14 +22,22 @@ class AZKIRIG_PT_main(Panel):
 
         layout.separator()
         layout.label(text="Equipment", icon="OUTLINER_COLLECTION")
-        for key in ("ARMOR", "CAPE", "ELYTRA"):
+        self._draw_target_row(layout, "ARMOR")
+        for key in ("CAPE", "ELYTRA"):
+            self._draw_target_row(layout, key)
+
+        layout.separator()
+        layout.label(text="Armor Parts", icon="SHIELD")
+        for key in ("ARMOR_HELMET", "ARMOR_CHESTPLATE", "ARMOR_ARMS", "ARMOR_LEGS", "ARMOR_BOOTS"):
             self._draw_target_row(layout, key)
 
         layout.separator()
         layout.label(text="Arm Style", icon="ARMATURE_DATA")
         row = layout.row(align=True)
-        self._draw_target_button(row, "WIDE_ARMS")
-        self._draw_target_button(row, "SLIM_ARMS")
+        wide = row.operator("azkirig.set_arm_style", text="Wide")
+        wide.style = "WIDE"
+        slim = row.operator("azkirig.set_arm_style", text="Slim")
+        slim.style = "SLIM"
 
         layout.separator()
         layout.label(text="Texture Replacement", icon="TEXTURE")
