@@ -54,12 +54,7 @@ TARGETS = {
     "ARMOR": {
         "label": "Armor",
         "collections": ("armor",),
-        "objects": (
-            "Helmet", "Chestplate",
-            "Left Arm Armor", "Right Arm Armor",
-            "Left Leg Armor", "Right Leg Armor",
-            "Left Boot", "Right Boot",
-        ),
+        "objects": (),
     },
     "CAPE": {
         "label": "Cape",
