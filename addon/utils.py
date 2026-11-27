@@ -194,14 +194,30 @@ def materials_for_texture_slot(slot):
 
 
 def replace_material_images(materials, filepath):
-    """Replace image references on Image Texture nodes in the supplied materials."""
-    image = bpy.data.images.load(filepath, check_existing=True)
-    changed = 0
+    """Replace a single unambiguous Image Texture node per target material.
 
+    Materials with multiple image nodes are rejected until their node graphs
+    have been inspected and the intended texture node can be identified.
+    """
+    targets = []
     for material in materials:
-        for node in material.node_tree.nodes:
-            if node.type == "TEX_IMAGE":
-                node.image = image
-                changed += 1
+        image_nodes = [
+            node for node in material.node_tree.nodes
+            if node.type == "TEX_IMAGE"
+        ]
+        if len(image_nodes) > 1:
+            raise ValueError(
+                f"Material '{material.name}' has multiple Image Texture nodes; "
+                "its node graph must be mapped before replacement."
+            )
+        if len(image_nodes) == 1:
+            targets.append(image_nodes[0])
 
-    return changed, image
+    if not targets:
+        return 0, None
+
+    image = bpy.data.images.load(filepath, check_existing=True)
+    for node in targets:
+        node.image = image
+
+    return len(targets), image
