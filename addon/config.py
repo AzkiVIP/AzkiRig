@@ -26,6 +26,31 @@ TARGETS = {
         "collections": (),
         "objects": ("mouth", "teeth"),
     },
+    "ARMOR_HELMET": {
+        "label": "Helmet",
+        "collections": (),
+        "objects": ("Helmet",),
+    },
+    "ARMOR_CHESTPLATE": {
+        "label": "Chestplate",
+        "collections": (),
+        "objects": ("Chestplate",),
+    },
+    "ARMOR_ARMS": {
+        "label": "Arm Armor",
+        "collections": (),
+        "objects": ("Left Arm Armor", "Right Arm Armor"),
+    },
+    "ARMOR_LEGS": {
+        "label": "Leg Armor",
+        "collections": (),
+        "objects": ("Left Leg Armor", "Right Leg Armor"),
+    },
+    "ARMOR_BOOTS": {
+        "label": "Boots",
+        "collections": (),
+        "objects": ("Left Boot", "Right Boot"),
+    },
     "ARMOR": {
         "label": "Armor",
         "collections": ("armor",),
