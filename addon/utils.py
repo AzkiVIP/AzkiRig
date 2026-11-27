@@ -36,6 +36,23 @@ def resolve_target(key):
         if obj:
             objects.append(obj)
 
+    # The master armor collection should control only the collection itself,
+    # preserving each armor object's independent visibility state.
+    if key == "ARMOR" and collections:
+        objects.clear()
+    elif key == "ARMOR" and not collections:
+        fallback_names = (
+            "Helmet", "Chestplate",
+            "Left Arm Armor", "Right Arm Armor",
+            "Left Leg Armor", "Right Leg Armor",
+            "Left Boot", "Right Boot",
+        )
+        objects.extend(
+            bpy.data.objects[name]
+            for name in fallback_names
+            if bpy.data.objects.get(name)
+        )
+
     # Keep datablocks unique while preserving their order.
     collections = list(dict.fromkeys(collections))
     objects = list(dict.fromkeys(objects))
