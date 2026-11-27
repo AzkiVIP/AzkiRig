@@ -7,8 +7,8 @@ AzkiRIG is a companion add-on for the AzkiRig Minecraft character rig.
 This first implementation is deliberately limited to operations that can be mapped from the rig's currently identified datablock names:
 
 - Toggle face, eyes, eyebrows, and mouth visibility.
-- Toggle armor, cape, and elytra visibility.
-- Switch visibility between the Wide Arms and Slim Arms groups.
+- Toggle all armor, individual armor sections, cape, and elytra visibility.
+- Switch between Wide and Slim arm groups (one shown while the other is hidden).
 - Replace the skin image in the `AzkiRig Skin` material.
 - Replace image nodes used by main armor or leggings materials.
 - Restore visibility to the state captured when the add-on was enabled.
