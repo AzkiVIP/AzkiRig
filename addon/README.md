@@ -29,7 +29,7 @@ For local development, the `addon/` folder can also be installed as an extension
 
 The object and collection names in `config.py` come from a static inspection of the supplied AzkiRig Face file. A full in-Blender audit of collection nesting, material node graphs, and object visibility is still required.
 
-Texture replacement currently updates every Image Texture node in each resolved target material. If a material contains multiple image nodes for different purposes, they will all receive the selected image. This behavior must be narrowed after inspecting the actual node graphs.
+Texture replacement currently accepts only materials with exactly one Image Texture node. If a target material contains multiple image nodes, the operation is cancelled rather than risking replacement of unrelated maps. Exact node mapping still needs to be added after inspecting the actual node graphs.
 
 ## Not implemented yet
 
