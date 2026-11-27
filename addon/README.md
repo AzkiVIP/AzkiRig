@@ -8,7 +8,7 @@ This first implementation is deliberately limited to operations that can be mapp
 
 - Toggle face, eyes, eyebrows, and mouth visibility.
 - Toggle all armor, individual armor sections, cape, and elytra visibility.
-- Switch between Wide and Slim arm groups (one shown while the other is hidden).
+- Switch visibility between the Wide and Slim arm groups (one shown while the other is hidden). This is a basic visibility switch pending an in-Blender validation.
 - Replace the skin image in the `AzkiRig Skin` material.
 - Replace image nodes used by main armor or leggings materials.
 - Restore visibility to the state captured when the add-on was enabled.
@@ -39,8 +39,8 @@ The following requested features are intentionally deferred until the rig can be
 - Eye and pupil color controls.
 - Eye/pupil emission controls.
 - Pupil texture selection.
-- Independent armor visibility and armor texture mapping by exact material.
-- A verified Wide/Slim arm switch that accounts for all collection and render states.
+- Armor texture mapping by exact material/node.
+- Verification of the Wide/Slim arm switch against all collection and render states.
 - A rig-aware reset for material values and texture assignments.
 - Dynamic Parent integration.
 
