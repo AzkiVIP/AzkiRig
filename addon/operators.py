@@ -14,6 +14,7 @@ from .utils import (
     restore_all_visibility,
     restore_target_visibility,
     toggle_target_visibility,
+    set_target_visibility,
 )
 
 
@@ -38,6 +39,33 @@ class AZKIRIG_OT_toggle_target(Operator):
 
         action = "shown" if visible else "hidden"
         self.report({"INFO"}, f"{TARGETS[self.target]['label']} {action} ({count} datablocks)")
+        return {"FINISHED"}
+
+
+class AZKIRIG_OT_set_arm_style(Operator):
+    bl_idname = "azkirig.set_arm_style"
+    bl_label = "Set Arm Style"
+    bl_options = {"REGISTER", "UNDO"}
+
+    style: EnumProperty(
+        name="Arm Style",
+        items=(
+            ("WIDE", "Wide", "Show the Wide Arms and hide Slim Arms"),
+            ("SLIM", "Slim", "Show the Slim Arms and hide Wide Arms"),
+        ),
+    )
+
+    def execute(self, context):
+        active = "WIDE_ARMS" if self.style == "WIDE" else "SLIM_ARMS"
+        inactive = "SLIM_ARMS" if self.style == "WIDE" else "WIDE_ARMS"
+        active_count = set_target_visibility(active, True)
+        inactive_count = set_target_visibility(inactive, False)
+
+        if not active_count and not inactive_count:
+            self.report({"WARNING"}, "No arm style targets were found")
+            return {"CANCELLED"}
+
+        self.report({"INFO"}, f"{self.style.title()} arm style enabled")
         return {"FINISHED"}
 
 
@@ -124,6 +152,7 @@ class AZKIRIG_OT_replace_texture(Operator):
 
 CLASSES = (
     AZKIRIG_OT_toggle_target,
+    AZKIRIG_OT_set_arm_style,
     AZKIRIG_OT_reset_target,
     AZKIRIG_OT_reset_all,
     AZKIRIG_OT_replace_texture,
