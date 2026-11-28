@@ -220,7 +220,7 @@ def find_rgb_node(mat):
 def get_skin_image(arm, props):
     if props.skin_image:
         return props.skin_image
-    skin_mat = resolve_rig_material(arm, props.skin_mat, CONFIG["mat_skin"])
+    skin_mat = resolve_rig_material(arm, CONFIG["mat_skin"])
     skin_node = find_image_node(skin_mat)
     if skin_node and skin_node.image:
         return skin_node.image
@@ -307,7 +307,7 @@ def set_emission_settings(
 # =====================================================================
 
 def apply_skin_texture(arm, props):
-    mat = resolve_rig_material(arm, props.skin_mat, CONFIG["mat_skin"])
+    mat = resolve_rig_material(arm, CONFIG["mat_skin"])
     if mat and props.skin_image:
         img_node = find_image_node(mat)
         if img_node:
@@ -366,13 +366,13 @@ def apply_armor_visibility(context, arm, props):
 
 
 def apply_armor_textures(arm, props):
-    main_mat = resolve_rig_material(arm, props.armor_main_mat, CONFIG["mat_armor_main"])
+    main_mat = resolve_rig_material(arm, CONFIG["mat_armor_main"])
     if main_mat and props.armor_main_image:
         img_node = find_image_node(main_mat)
         if img_node:
             img_node.image = props.armor_main_image
 
-    leg_mat = resolve_rig_material(arm, props.armor_leggings_mat, CONFIG["mat_armor_leggings"])
+    leg_mat = resolve_rig_material(arm, CONFIG["mat_armor_leggings"])
     if leg_mat and props.armor_leggings_image:
         img_node = find_image_node(leg_mat)
         if img_node:
@@ -381,10 +381,10 @@ def apply_armor_textures(arm, props):
 
 def apply_eyebrow_style(arm, props):
     mat_default = resolve_rig_material(
-        arm, props.eyebrow_mat, CONFIG["mat_eyebrow"]
+        arm, CONFIG["mat_eyebrow"]
     )
     mat_img = resolve_rig_material(
-        arm, props.eyebrow_img_mat, CONFIG["mat_eyebrow_img"]
+        arm, CONFIG["mat_eyebrow_img"]
     )
 
     if props.eyebrow_mode == "SKIN":
@@ -424,15 +424,15 @@ def _apply_single_eye_or_pupil(arm, props, is_pupil: bool):
         custom_img = props.eye_image
         color_val = props.eye_color
         objs = CONFIG["objs_eye"]
-        default_mat = resolve_rig_material(arm, props.eye_mat, CONFIG["mat_eye"])
-        img_mat = resolve_rig_material(arm, props.eye_img_mat, CONFIG["mat_eye_img"])
+        default_mat = resolve_rig_material(arm, CONFIG["mat_eye"])
+        img_mat = resolve_rig_material(arm, CONFIG["mat_eye_img"])
     else:
         mode = props.pupil_mode
         custom_img = props.pupil_image
         color_val = props.pupil_color
         objs = CONFIG["objs_pupil"]
-        default_mat = resolve_rig_material(arm, props.pupil_mat, CONFIG["mat_pupil"])
-        img_mat = resolve_rig_material(arm, props.pupil_img_mat, CONFIG["mat_pupil_img"])
+        default_mat = resolve_rig_material(arm, CONFIG["mat_pupil"])
+        img_mat = resolve_rig_material(arm, CONFIG["mat_pupil_img"])
 
     if mode == "SKIN":
         active_mat = img_mat or default_mat
@@ -472,8 +472,8 @@ def apply_emission(arm, props):
 
     if props.emission_target in {"EYE", "BOTH"}:
         eye_mats = [
-            resolve_rig_material(arm, props.eye_mat, CONFIG["mat_eye"]),
-            resolve_rig_material(arm, props.eye_img_mat, CONFIG["mat_eye_img"]),
+            resolve_rig_material(arm, CONFIG["mat_eye"]),
+            resolve_rig_material(arm, CONFIG["mat_eye_img"]),
         ]
         for m in eye_mats:
             if m:
@@ -488,8 +488,8 @@ def apply_emission(arm, props):
 
     if props.emission_target in {"PUPIL", "BOTH"}:
         pupil_mats = [
-            resolve_rig_material(arm, props.pupil_mat, CONFIG["mat_pupil"]),
-            resolve_rig_material(arm, props.pupil_img_mat, CONFIG["mat_pupil_img"]),
+            resolve_rig_material(arm, CONFIG["mat_pupil"]),
+            resolve_rig_material(arm, CONFIG["mat_pupil_img"]),
         ]
         for m in pupil_mats:
             if m:
