@@ -1,0 +1,15 @@
+
+schema_version = "1.0.0"
+
+id = "azkirig"
+version = "1.0.0"
+name = "AzkiRIG"
+tagline = "Minecraft Character Rig Customization"
+maintainer = "AzkiVIP"
+type = "add-on"
+
+blender_version_min = "5.0.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+
+tags = ["Rigging", "3D View"]
